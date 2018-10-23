@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\frankie\Desktop\Research Project\Android_part\Autotrain version\nirscannano_android-master\NIRScanNano_Android-master\MPChartLib\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="05cc9eb7dcf15c7aa8793fb964d0ad7498b56232">
+        <dex dex="C:\Users\frankie\Desktop\Research Project\Android_part\Autotrain version\nirscannano_android-master\NIRScanNano_Android-master\app\build\intermediates\pre-dexed\debug\classes_10869670949f1fa5a81e1160d70a9a65a5f9579a.jar" />
+    </item>
+
+</items>

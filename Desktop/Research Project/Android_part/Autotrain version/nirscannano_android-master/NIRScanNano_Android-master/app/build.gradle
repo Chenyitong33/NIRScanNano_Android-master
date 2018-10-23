@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '26.0.1'
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    defaultConfig {
+        applicationId "com.kstechnologies.NanoScan"
+        minSdkVersion 21
+        targetSdkVersion 22
+        versionCode 11
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile project(':MPChartLib')
+    compile 'com.opencsv:opencsv:3.6'
+    compile (name: 'nirscannanolibrary', ext:'aar')
+    compile group: 'commons-net', name: 'commons-net', version: '3.5'
+}

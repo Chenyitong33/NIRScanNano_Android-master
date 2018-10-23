@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".ScanListActivity">
+
+    <item
+        android:id="@+id/action_alarm"
+        android:icon="@drawable/ic_alarm"
+        android:title="@string/Hello"
+        android:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_video"
+        android:icon="@drawable/ic_video"
+        android:title="@string/Video"
+        android:showAsAction="always" />
+
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:icon="@drawable/ic_settings_remote_black_24dp" android:showAsAction="always" />
+
+
+    <item android:id="@+id/action_scan" android:title="@string/action_scan"
+        android:icon="@drawable/ic_highlight_black_24dp" android:showAsAction="always" />
+
+</menu>

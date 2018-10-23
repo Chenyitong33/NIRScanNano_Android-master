@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kstechnologies.NanoScan.SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dip8"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="Type"
+            android:textColor="@color/black" />
+
+        <ToggleButton
+            android:id="@+id/tb_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textOff="Pharmaceuticals"
+            android:textOn="Gluten" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_temp_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:layout_below="@id/rl_temperature"
+        android:background="@color/black"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_setNano"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_temperature"
+        android:paddingTop="@dimen/dip8">
+
+        <Button
+            android:id="@+id/btn_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="Pair" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/btn_set"
+            android:text="Pair Device"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_pref_nano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_set_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:layout_below="@id/rl_setNano"
+        android:background="@color/black"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_clearNano"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_setNano"
+        android:paddingTop="@dimen/dip8">
+
+        <Button
+            android:id="@+id/btn_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/forget" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/btn_forget"
+            android:text="Forget Device"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_clear_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:layout_below="@id/rl_clearNano"
+        android:layout_marginBottom="@dimen/dip8"
+        android:background="@color/black"/>
+
+</RelativeLayout>

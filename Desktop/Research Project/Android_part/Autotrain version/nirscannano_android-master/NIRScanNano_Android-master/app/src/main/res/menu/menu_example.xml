@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/SVM"
+        android:title="@string/SVM" />
+    <item
+        android:id="@+id/RF"
+        android:title="@string/RF" />
+    <item
+        android:id="@+id/XGBoost"
+        android:title="@string/XGBoost" />
+</menu>
